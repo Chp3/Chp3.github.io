@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -79,18 +86,18 @@
 
 
 
-<meta name="description" content="Git常用命令 基础操作命令切换到指定文件夹1$ cd xxx(路径)  返回上层路径1$ cd ..  将当前目录变成git可以管理的仓库1$ git init  将文件添加到git仓库（暂存区）1$ git add xxx（文件名及后缀）  将文件提交到仓库，-m后面跟本次提交说明1$ git commit -m &quot;注释内容&quot;  查看当前仓库状态1$ git status  查看具体修改的内容">
+<meta name="description" content="基础操作命令切换到指定文件夹1$ cd xxx(路径)  返回上层路径1$ cd ..  将当前目录变成git可以管理的仓库1$ git init  将文件添加到git仓库（暂存区）1$ git add xxx（文件名及后缀）  将文件提交到仓库，-m后面跟本次提交说明1$ git commit -m &quot;注释内容&quot;  查看当前仓库状态1$ git status  查看具体修改的内容1$ git d">
 <meta name="keywords" content="GIT,命令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GIT常用命令">
 <meta property="og:url" content="http://yoursite.com/2019/07/21/GIT常用命令/index.html">
 <meta property="og:site_name" content="Cp3´s Blog">
-<meta property="og:description" content="Git常用命令 基础操作命令切换到指定文件夹1$ cd xxx(路径)  返回上层路径1$ cd ..  将当前目录变成git可以管理的仓库1$ git init  将文件添加到git仓库（暂存区）1$ git add xxx（文件名及后缀）  将文件提交到仓库，-m后面跟本次提交说明1$ git commit -m &quot;注释内容&quot;  查看当前仓库状态1$ git status  查看具体修改的内容">
+<meta property="og:description" content="基础操作命令切换到指定文件夹1$ cd xxx(路径)  返回上层路径1$ cd ..  将当前目录变成git可以管理的仓库1$ git init  将文件添加到git仓库（暂存区）1$ git add xxx（文件名及后缀）  将文件提交到仓库，-m后面跟本次提交说明1$ git commit -m &quot;注释内容&quot;  查看当前仓库状态1$ git status  查看具体修改的内容1$ git d">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-21T08:49:31.800Z">
+<meta property="og:updated_time" content="2019-07-21T09:04:12.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GIT常用命令">
-<meta name="twitter:description" content="Git常用命令 基础操作命令切换到指定文件夹1$ cd xxx(路径)  返回上层路径1$ cd ..  将当前目录变成git可以管理的仓库1$ git init  将文件添加到git仓库（暂存区）1$ git add xxx（文件名及后缀）  将文件提交到仓库，-m后面跟本次提交说明1$ git commit -m &quot;注释内容&quot;  查看当前仓库状态1$ git status  查看具体修改的内容">
+<meta name="twitter:description" content="基础操作命令切换到指定文件夹1$ cd xxx(路径)  返回上层路径1$ cd ..  将当前目录变成git可以管理的仓库1$ git init  将文件添加到git仓库（暂存区）1$ git add xxx（文件名及后缀）  将文件提交到仓库，-m后面跟本次提交说明1$ git commit -m &quot;注释内容&quot;  查看当前仓库状态1$ git status  查看具体修改的内容1$ git d">
 
 
 
@@ -330,7 +337,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-07-21T17:04:12+08:00">
+                2019-07-21
+              </time>
             
           </span>
 
@@ -389,8 +408,7 @@
       
 
       
-        <p>Git常用命令</p>
-<h2 id="基础操作命令"><a href="#基础操作命令" class="headerlink" title="基础操作命令"></a>基础操作命令</h2><h3 id="切换到指定文件夹"><a href="#切换到指定文件夹" class="headerlink" title="切换到指定文件夹"></a>切换到指定文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> xxx(路径)</span><br></pre></td></tr></table></figure>
+        <h2 id="基础操作命令"><a href="#基础操作命令" class="headerlink" title="基础操作命令"></a>基础操作命令</h2><h3 id="切换到指定文件夹"><a href="#切换到指定文件夹" class="headerlink" title="切换到指定文件夹"></a>切换到指定文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> xxx(路径)</span><br></pre></td></tr></table></figure>
 
 <h3 id="返回上层路径"><a href="#返回上层路径" class="headerlink" title="返回上层路径"></a>返回上层路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ..</span><br></pre></td></tr></table></figure>
 
@@ -489,6 +507,24 @@
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Cp3
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2019/07/21/GIT常用命令/" title="GIT常用命令">http://yoursite.com/2019/07/21/GIT常用命令/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -726,11 +762,7 @@
 
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
-
-
-  <span class="post-meta-divider">|</span>
 
 
 
