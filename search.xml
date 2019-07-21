@@ -3,14 +3,26 @@
   <entry>
     <title><![CDATA[GIT常用命令]]></title>
     <url>%2F2019%2F07%2F21%2FGIT%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[Git常用命令 Quick Start###切换到指定文件夹 1$ cd xxx(路径) ###返回上层路径 1$ cd .. ###将当前目录变成git可以管理的仓库 1$ git init ###将文件添加到git仓库（暂存区） 1$ git add xxx（文件名及后缀） ###将文件提交到仓库，-m后面跟本次提交说明 1$ git commit -m "注释内容" ###查看当前仓库状态 1$ git status ###查看具体修改的内容 1$ git diff xxx（文件名及后缀） ###查看最近到最远的提交日志 1$ git log ###简化git log输出内容,前面的一大串16进制数是commit id 1$ git log --pretty=oneline ###回退到上一个版本 1$ git reset --hard HEAD^ ###回退到指定版本 1$ git reset --hard 版本号（commit id） ###记录每一次命令，确定回退版本号 1$ git reflog ###.git文件夹详解 .git是git的版本库，有stage或者叫index的暂存区，还会自动创建第一个分之master（主分支）和指向master的头指针HEADUntracked 状态指没有被添加过可以向暂存区添加多个文件一起提交到仓库 ###丢弃工作区的修改 1$ git checkout -- file ###可以把暂存区的修改撤销掉 1$ git reset HEAD file ###删除文件 1$ rm file ###从版本库中删除文件 1$ git commit -m "" ###用版本库里的版本替换工作区版本，可以用于恢复被误删的文件 1$ git checkout -- file ###创建远程仓库 1$ ssh-keygen -t rsa -C "youremail"//创建ssh key，一路回车，不用设置密码 .ssh文件夹下的id_rsa是私人密钥，id_rsa.pub是公钥 ###在github上面创建远程仓库，与本地仓库关联 1$ git remote add origin git@github.com:自己账户名/仓库名.git //origin是远程仓库名字，如果报错用git init初始化仓库 1$ git push -u origin master //将本地仓库内容推送到远程仓库-u 参数会将本地和远程分之关联起来，在以后的推送或者拉取时就可以简化命令 1$ git push origin master //本地修改后通过这条命令将本地master分支推送到github ###先创建远程库，然后从远程库克隆 123$ git clone ssh密钥$ cd 切换到指定文件夹$ ls //查看当前目录下详情 ###创建并切换到当前分支 1$ git checkout -b xxx(分支名字) ###创建分支 1$ git branch xxx ###切换分支 1$ git checkout xxx ###列出所有分支，当前分支前面会有*号标记 1$ git branch ###分支操作 1$ git branch master//切换到主分支 1$ git merge xxx//将分支的工作成果合并到master分支上 1$ git branch -d xxx//合并完成后删除分支 ###查看分支合并图 1$ git log --graph ###标签创建标签先切换到需要标签的分支上然后 1$ git tag (标签名) 1$ git tag //查看内容 ###查看历史提交 1$ git log --pretty=oneline --abbrev-commit ###对指定commit id打标签 1$ git tag 标签名 commit id ###查看标签信息 1$ git show 标签名 ###删除标签 1$ git tag -d 标签名 ###推送标签到远程仓库 1$ git push origin(远程仓库名字) 标签名 ###一次性推送所有未推送到远程的本地标签 1$ git push origin --tags ###标签已经推送到远程，要删除先删除本地 1$ git tag -d 标签名 然后从远程删除 1$ git push origin :refs/tags/标签名 ###查看远程库信息 1$ git remote -v ###删除远程库 1$ git remote rm origin]]></content>
+    <content type="text"><![CDATA[Git常用命令 基础操作命令切换到指定文件夹1$ cd xxx(路径) 返回上层路径1$ cd .. 将当前目录变成git可以管理的仓库1$ git init 将文件添加到git仓库（暂存区）1$ git add xxx（文件名及后缀） 将文件提交到仓库，-m后面跟本次提交说明1$ git commit -m "注释内容" 查看当前仓库状态1$ git status 查看具体修改的内容1$ git diff xxx（文件名及后缀） 查看最近到最远的提交日志1$ git log 简化git log输出内容,前面的一大串16进制数是commit id1$ git log --pretty=oneline 回退到上一个版本1$ git reset --hard HEAD^ 回退到指定版本1$ git reset --hard 版本号（commit id） 记录每一次命令，确定回退版本号1$ git reflog .git文件夹详解.git是git的版本库，有stage或者叫index的暂存区，还会自动创建第一个分之master（主分支）和指向master的头指针HEADUntracked 状态指没有被添加过可以向暂存区添加多个文件一起提交到仓库 丢弃工作区的修改1$ git checkout -- file 可以把暂存区的修改撤销掉1$ git reset HEAD file 删除文件1$ rm file 从版本库中删除文件1$ git commit -m "" 用版本库里的版本替换工作区版本，可以用于恢复被误删的文件1$ git checkout -- file 创建远程仓库1$ ssh-keygen -t rsa -C "youremail"//创建ssh key，一路回车，不用设置密码 .ssh文件夹下的id_rsa是私人密钥，id_rsa.pub是公钥 在github上面创建远程仓库，与本地仓库关联1$ git remote add origin git@github.com:自己账户名/仓库名.git //origin是远程仓库名字，如果报错用git init初始化仓库 1$ git push -u origin master //将本地仓库内容推送到远程仓库-u 参数会将本地和远程分之关联起来，在以后的推送或者拉取时就可以简化命令 1$ git push origin master //本地修改后通过这条命令将本地master分支推送到github 先创建远程库，然后从远程库克隆123$ git clone ssh密钥$ cd 切换到指定文件夹$ ls //查看当前目录下详情 分支创建并切换到当前分支1$ git checkout -b xxx(分支名字) 创建分支1$ git branch xxx 切换分支1$ git checkout xxx 列出所有分支，当前分支前面会有*号标记1$ git branch 分支操作1$ git branch master//切换到主分支 1$ git merge xxx//将分支的工作成果合并到master分支上 1$ git branch -d xxx//合并完成后删除分支 查看分支合并图1$ git log --graph 标签创建标签先切换到需要标签的分支上然后 1$ git tag (标签名) 1$ git tag //查看内容 查看历史提交1$ git log --pretty=oneline --abbrev-commit 对指定commit id打标签1$ git tag 标签名 commit id 查看标签信息1$ git show 标签名 删除标签1$ git tag -d 标签名 推送标签到远程仓库1$ git push origin(远程仓库名字) 标签名 一次性推送所有未推送到远程的本地标签1$ git push origin --tags 标签已经推送到远程，要删除先删除本地1$ git tag -d 标签名 然后从远程删除 1$ git push origin :refs/tags/标签名 查看远程库信息1$ git remote -v 删除远程库1$ git remote rm origin]]></content>
+      <categories>
+        <category>learn</category>
+      </categories>
       <tags>
         <tag>GIT</tag>
+        <tag>命令</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello]]></title>
     <url>%2F2019%2F07%2F17%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to My Blog This is My very first post. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>learn</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+        <tag>hello world</tag>
+      </tags>
   </entry>
 </search>
