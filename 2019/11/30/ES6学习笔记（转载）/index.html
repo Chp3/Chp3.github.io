@@ -86,16 +86,17 @@
 
 
 
-<meta name="description" content="yOunG is MonEy">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cp3´s Blog">
-<meta property="og:url" content="http://yoursite.com/tags/GIT/index.html">
+<meta name="description" content="理解ES 全称: ECMAScript js语言的规范 我们用的js是它的实现  ES6 2个新的关键字   let/const 块作用域 没有变量提升 不能重复定义 值不可变   变量的解构赋值   将包含多个数据的对象(数组)一次赋值给多个变量 数据源: 对象/数组 目标: {a, b}/[a, b]   各种数据类型的扩展   字符串  模板字符串  作用: 简化字符串的拼接 模板字符串必须">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6学习笔记">
+<meta property="og:url" content="http://yoursite.com/2019/11/30/ES6学习笔记（转载）/index.html">
 <meta property="og:site_name" content="Cp3´s Blog">
-<meta property="og:description" content="yOunG is MonEy">
+<meta property="og:description" content="理解ES 全称: ECMAScript js语言的规范 我们用的js是它的实现  ES6 2个新的关键字   let/const 块作用域 没有变量提升 不能重复定义 值不可变   变量的解构赋值   将包含多个数据的对象(数组)一次赋值给多个变量 数据源: 对象/数组 目标: {a, b}/[a, b]   各种数据类型的扩展   字符串  模板字符串  作用: 简化字符串的拼接 模板字符串必须">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-30T07:33:55.080Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cp3´s Blog">
-<meta name="twitter:description" content="yOunG is MonEy">
+<meta name="twitter:title" content="ES6学习笔记">
+<meta name="twitter:description" content="理解ES 全称: ECMAScript js语言的规范 我们用的js是它的实现  ES6 2个新的关键字   let/const 块作用域 没有变量提升 不能重复定义 值不可变   变量的解构赋值   将包含多个数据的对象(数组)一次赋值给多个变量 数据源: 对象/数组 目标: {a, b}/[a, b]   各种数据类型的扩展   字符串  模板字符串  作用: 简化字符串的拼接 模板字符串必须">
 
 
 
@@ -125,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/GIT/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/30/ES6学习笔记（转载）/">
 
 
 
 
 
-  <title>标签: GIT | Cp3´s Blog</title>
+  <title>ES6学习笔记 | Cp3´s Blog</title>
   
 
 
@@ -150,7 +151,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 	<a href="https://github.com/Chp3" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -276,52 +277,376 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>GIT<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/30/ES6学习笔记（转载）/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cp3">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/cp3.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cp3´s Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/07/21/GIT常用命令/" itemprop="url">
-              
-                <span itemprop="name">GIT常用命令</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">ES6学习笔记</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-21T16:05:44+08:00" content="2019-07-21">
-          07-21
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-30T15:31:35+08:00">
+                2019-11-30
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-11-30T15:33:55+08:00">
+                2019-11-30
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index">
+                    <span itemprop="name">learn</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  906
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="理解ES"><a href="#理解ES" class="headerlink" title="理解ES"></a><strong>理解ES</strong></h2><ol>
+<li>全称: ECMAScript</li>
+<li>js语言的规范</li>
+<li>我们用的js是它的实现</li>
+</ol>
+<h2 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h2><ol>
+<li><strong>2个新的关键字</strong></li>
+</ol>
+<ul>
+<li>let/const</li>
+<li>块作用域</li>
+<li>没有变量提升</li>
+<li>不能重复定义</li>
+<li>值不可变</li>
+</ul>
+<ol start="2">
+<li><strong>变量的解构赋值</strong></li>
+</ol>
+<ul>
+<li>将包含多个数据的对象(数组)一次赋值给多个变量</li>
+<li>数据源: 对象/数组</li>
+<li>目标: {a, b}/[a, b]</li>
+</ul>
+<ol start="3">
+<li>各种数据类型的扩展</li>
+</ol>
+<ul>
+<li><p>字符串</p>
+<ul>
+<li><strong>模板字符串</strong> <ul>
+<li>作用: 简化字符串的拼接</li>
+<li>模板字符串必须用``</li>
+<li>变化的部分使用${xxx}定义</li>
+</ul>
+</li>
+<li>contains(str) : 判断是否包含指定的字符串</li>
+<li>startsWith(str) : 判断是否以指定字符串开头</li>
+<li>endsWith(str) : 判断是否以指定字符串结尾</li>
+<li>repeat(count) : 重复指定次数</li>
+</ul>
+</li>
+<li><p>对象</p>
+<ul>
+<li><p><strong>简化的对象写法</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let name = &apos;Tom&apos;;</span><br><span class="line">let age = 12;</span><br><span class="line">let person = &#123;</span><br><span class="line">    name,</span><br><span class="line">    age,</span><br><span class="line">    setName (name) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Object.assign(target, source1, source2..) : 将源对象的属性复制到目标对象上</p>
+</li>
+<li><p>Object.is(v1, v2) : 判断2个数据是否完全相等</p>
+</li>
+<li><p><strong>proto</strong>属性 : 隐式原型属性</p>
+</li>
+</ul>
+</li>
+<li><p>数组</p>
+<ul>
+<li>Array.from(v) : 将伪数组对象或可遍历对象转换为真数组</li>
+<li>Array.of(v1, v2, v3) : 将一系列值转换成数组</li>
+<li>find(function(value, index, arr){return true}) : 找出第一个满足条件返回true的元素</li>
+<li>findIndex(function(value, index, arr){return true}) : 找出第一个满足条件返回true的元素下标</li>
+</ul>
+</li>
+<li><p>函数</p>
+<ul>
+<li><strong>箭头函数</strong><ul>
+<li>用来定义匿名函数</li>
+<li>基本语法:<ul>
+<li>没有参数: () =&gt; console.log(‘xxxx’)</li>
+<li>一个参数: i =&gt; i+2</li>
+<li>大于一个参数: (i,j) =&gt; i+j</li>
+<li>函数体不用大括号: 默认返回结果</li>
+<li>函数体如果有多个语句, 需要用{}包围</li>
+</ul>
+</li>
+<li>使用场景: 多用来定义回调函数</li>
+</ul>
+</li>
+<li><strong>形参的默认值</strong><ul>
+<li>定义形参时指定其默认的值</li>
+</ul>
+</li>
+<li><strong>rest(可变)参数</strong><ul>
+<li>通过形参左侧的…来表达, 取代arguments的使用</li>
+</ul>
+</li>
+<li><strong>扩展运算符(…)</strong><ul>
+<li>可以分解出数组或对象中的数据</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>set/Map容器结构</li>
+</ol>
+<ul>
+<li>容器: 能保存多个数据的对象, 同时必须具备操作内部数据的方法</li>
+<li>任意对象都可以作为容器使用, 但有的对象不太适合作为容器使用(如函数)</li>
+<li><strong>Set的特点</strong>: 保存多个value, value是不重复 ====&gt;数组元素去重</li>
+<li><strong>Map的特点</strong>: 保存多个key–value, key是不重复, value是可以重复的</li>
+<li>API<ul>
+<li>Set()/Set(arr) //arr是一维数组</li>
+<li>add(value)</li>
+<li>delete(value)</li>
+<li>clear();</li>
+<li>has(value)</li>
+<li>size</li>
+<li></li>
+<li>Map()/Map(arr) //arr是二维数组</li>
+<li>set(key, value)</li>
+<li>delete(key)</li>
+<li>clear()</li>
+<li>has(key)</li>
+<li>size</li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li><strong>for–of循环</strong></li>
+</ol>
+<ul>
+<li>可以遍历任何容器</li>
+<li>数组</li>
+<li>对象</li>
+<li>伪/类对象</li>
+<li>字符串</li>
+<li>可迭代的对象</li>
+</ul>
+<ol start="6">
+<li><strong>Promise</strong></li>
+</ol>
+<ul>
+<li><p>解决<code>回调地狱</code>(回调函数的层层嵌套, 编码是不断向右扩展, 阅读性很差)</p>
+</li>
+<li><p>能以同步编码的方式实现异步调用</p>
+</li>
+<li><p>在es6之前原生的js中是没这种实现的, 一些第三方框架(jQuery)实现了promise</p>
+</li>
+<li><p>ES6中定义实现API: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// 1. 创建promise对象</span><br><span class="line">var promise = new Promise(function(resolve, reject)&#123; </span><br><span class="line">  // 做异步的操作 </span><br><span class="line">  if(成功) &#123; // 调用成功的回调</span><br><span class="line">    resolve(result); </span><br><span class="line">  &#125; else &#123; // 调用失败的回调</span><br><span class="line">    reject(errorMsg); </span><br><span class="line">  &#125; </span><br><span class="line">&#125;) </span><br><span class="line">// 2. 调用promise对象的then()</span><br><span class="line">promise.then(function(</span><br><span class="line">  result =&gt; console.log(result), </span><br><span class="line">  errorMsg =&gt; alert(errorMsg)</span><br><span class="line">))</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="7">
+<li><strong>class类</strong></li>
+</ol>
+<ul>
+<li>用 class 定义一类</li>
+<li>用 constructor() 定义构造方法(相当于构造函数)</li>
+<li>一般方法: xxx () {}</li>
+<li>用extends来定义子类</li>
+<li>用super()来父类的构造方法</li>
+<li>子类方法自定义: 将从父类中继承来的方法重新实现一遍</li>
+<li>js中没有方法重载(方法名相同, 但参数不同)的语法</li>
+<li>转自尚硅谷es6教程</li>
+</ul>
 
       
     </div>
+    
+    
+    
+	
 
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Cp3
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2019/11/30/ES6学习笔记（转载）/" title="ES6学习笔记">http://yoursite.com/2019/11/30/ES6学习笔记（转载）/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/21/GIT常用命令/" rel="next" title="GIT常用命令">
+                <i class="fa fa-chevron-left"></i> GIT常用命令
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/30/vue-router学习笔记/" rel="prev" title="vue-router学习笔记">
+                vue-router学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -329,6 +654,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NTM4OC8yMTkwMA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -349,8 +683,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -440,6 +783,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解ES"><span class="nav-number">1.</span> <span class="nav-text">理解ES</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ES6"><span class="nav-number">2.</span> <span class="nav-text">ES6</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -618,6 +977,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -646,6 +1009,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
