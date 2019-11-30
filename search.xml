@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[vue-router学习笔记]]></title>
     <url>%2F2019%2F11%2F30%2Fvue-router%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[在模块化工程中使用vue-route 通过npm或者yarn安装路由 npm install vue-router或者yarn install vue-route 导入路由对象(全局配置，新建一个route文件夹并在其目录下新建index.js) 在index.js中写 import Vue from &#39;vue&#39; import VueRouter from &#39;vue-router&#39; Vue.use(VueRouter) 创建VueRouter对象 const routers=[ //// ] const router=new VueRouter({ //配置路由和组件之间的应用关系 routes }) 在main.js文件中的vue实例内挂载路由实例]]></content>
   </entry>
   <entry>
     <title><![CDATA[ES6学习笔记]]></title>
