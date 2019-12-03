@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[vuex的学习]]></title>
     <url>%2F2019%2F12%2F01%2Fvuex%E7%9A%84%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[单一状态树，不要创建多个store对象，用一个就行 vuex核心概念stateGettersMutationActionModule]]></content>
   </entry>
   <entry>
     <title><![CDATA[vue-router学习笔记]]></title>
